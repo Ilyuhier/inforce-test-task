@@ -1,38 +1,108 @@
+body{
+  overflow-x:hidden;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  align-items: center;
   display: flex;
   flex-direction: column;
+}
+.header{
+  background-color: #0b316b;
+  width: 100vw;
+  text-align: center;
+  padding: 10px;
+}
+.shop-title{
+  color: #becfe9;
+  font-size: 48px;
+}
+
+.card{
+  max-width: 400px;
+  padding: 1%;
+  border-radius: 20px;
+  margin: 2%;
+  background-color: #0b316b;
+  text-align: center;
+}
+.card-image{
+  max-width: 400px;
+}
+.card-name{
+  color: #becfe9;
+  font-size: 20px;
+}
+
+.item-page{
+  position: fixed;
+  background-color:rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.item-border{
+  background-color: #0b316b;
+  border-radius: 15px;
+  margin: 2%;
+  padding: 1% ;
+  color: #becfe9;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.item-title{
+  color: #becfe9;
+}
+.item-picture{
+  max-width: 500px;
+}
+.number_input{
+  width: 40px;
+  background-color: #becfe9;
+  color: black;
+  font-weight: 700;
+}
+.info-box{
+  display: flex;
+}
+.item-params{
+  background-color: #becfe9;
+  border-radius: 5px;
+  color: #0b316b;
+  text-align: center;
+  padding: 2%;
+  margin-right: 5%;
+}
+.item-comments{
+  overflow: scroll;
+  overflow-x: hidden;
+  max-height: 200px; 
+  width: 375px;
+  background-color: #becfe9;
+  color: #0b316b; 
+  border-radius: 5px;
+  padding: 2%;
+}
+.buttons{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.button{
+  color: #becfe9;
+  margin: 5%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cancel-button{
+  background-color: #6b1747c3;
+}
+.confirm-button{
+  background-color: #1e7b3dc3;
+}
+.comment-box{
+  background-color: #0b316b;
+  color: #becfe9;
+  border-radius: 5px;
+  min-width: 250px;
+  margin-right: 5%;
 }
